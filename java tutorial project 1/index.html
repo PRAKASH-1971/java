@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>javascript on steroids</title>
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()"> Click Me </button>
+            </div>
+
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()"> Reset </button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generator Cat</button>
+
+
+        <div class="flex-box-container-2" id="flex-cat-gen">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" height=150
+                width=150 id="rock" onclick="rpsGame(this)">
+            <img src="http://images.clipartpanda.com/paper-clipart-nexxuz-Loose-Leaf-Paper.png" height=150 width=150
+                id="paper" onclick="rpsGame(this)">
+            <img src="https://thumbs.dreamstime.com/b/female-clipart-hand-sign-vector-color-flat-illustration-isolated-white-background-web-83128345.jpg"
+                height=150 width=150 id="scissors" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4:Change the Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo</button>
+            <button class="btn btn-warning">Google</button>
+            <button class="btn btn-success">Facebook</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2>Challenge 5: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr> <!--table row-->
+                    <th>Wins</th> <!--Table Head-->
+                    <th>Loses</th>
+                    <th>Draw</th>  
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td> 
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
+
+<!-- https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/924/2D__57497.1440113502.1280.1280.png?c=2 
+https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/925/3C__99122.1440113509.1280.1280.png?c=2
+https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/926/4H__83243.1440113515.1280.1280.png?c=2
+https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/927/5S__90574.1440113521.1280.1280.png?c=2
+https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/931/9D__67286.1440113561.1280.1280.png?c=2
+https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/929/7C__93490.1440113539.1280.1280.png?c=2
+https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/928/6D__92916.1440113530.1280.1280.png?c=2 
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nicepng.com%2Fmaxp%2Fu2q8r5o0a9a9i1u2%2F&psig=AOvVaw1lZMgxTPNOqfAcKQ50T9oU&ust=1626276536982000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCICMz7Gu4PECFQAAAAAdAAAAABAM -->
